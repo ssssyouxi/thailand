@@ -24,7 +24,7 @@ h3
         p:first-child
             text-align: center
             font-size: 16px
-            color: #1156a6
+            color: #000
             margin-bottom: 0
 
     .contain
@@ -110,8 +110,11 @@ h3
             .content
                 min-height: 309px
             &:hover 
+                p:first-child
+                    color: #ed6c00
                 .content
                     display: block
+                    background-color: #ed6c00
                 .contain
                     display: none
 @media(max-width: 1199px)
@@ -133,11 +136,14 @@ h3
         font-size: 13px
 @media(min-width: 1000px)
     .sec2
-
+        .pro1:hover
+            background: url("../Thailand/b-l.jpg") repeat-y right center
+        .pro2:hover
+            background: url("../Thailand/b-l.jpg") repeat-y left center
         .pro1
             background: url("../Thailand/b-r.jpg") repeat-y right center   
         .pro2
-            background: url("../Thailand/b-l.jpg") repeat-y left center
+            background: url("../Thailand/b-r.jpg") repeat-y left center
 @media(max-width: 999px)
     .sec2 
         h4 

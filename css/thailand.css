@@ -36,7 +36,7 @@ h3 {
 .sec1 li.xb4 p:first-child {
   text-align: center;
   font-size: 16px;
-  color: #1156a6;
+  color: #000;
   margin-bottom: 0;
 }
 
@@ -145,8 +145,12 @@ h3 {
   .sec1 li.xb4 .content {
     min-height: 309px;
   }
+  .sec1 li.xb4:hover p:first-child {
+    color: #ed6c00;
+  }
   .sec1 li.xb4:hover .content {
     display: block;
+    background-color: #ed6c00;
   }
   .sec1 li.xb4:hover .contain {
     display: none;
@@ -177,11 +181,17 @@ h3 {
 }
 
 @media (min-width: 1000px) {
+  .sec2 .pro1:hover {
+    background: url("../Thailand/b-l.jpg") repeat-y right center;
+  }
+  .sec2 .pro2:hover {
+    background: url("../Thailand/b-l.jpg") repeat-y left center;
+  }
   .sec2 .pro1 {
     background: url("../Thailand/b-r.jpg") repeat-y right center;
   }
   .sec2 .pro2 {
-    background: url("../Thailand/b-l.jpg") repeat-y left center;
+    background: url("../Thailand/b-r.jpg") repeat-y left center;
   }
 }
 
