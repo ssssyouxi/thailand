@@ -1,0 +1,208 @@
+body {
+  font-size: 14px;
+}
+
+.h {
+  display: none;
+}
+
+.banner1 {
+  overflow: hidden;
+}
+
+.banner1 img {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+}
+
+h3 {
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+}
+
+.sec1 .intro {
+  font-size: 17px;
+  line-height: 29px;
+  color: #000;
+  margin-top: 38px;
+}
+
+.sec1 h3 {
+  margin-bottom: 24px;
+}
+
+.sec1 li.xb4 p:first-child {
+  text-align: center;
+  font-size: 16px;
+  color: #1156a6;
+  margin-bottom: 0;
+}
+
+.sec1 .contain {
+  position: relative;
+  margin-top: 58px;
+}
+
+.sec1 .contain .circle {
+  position: absolute;
+  z-index: 100;
+  background: #1156a6;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  left: 244px;
+  top: 162px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  display: none;
+}
+
+.sec1 .contain div {
+  width: 170px;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.sec1 .contain div.wrapper {
+  position: relative;
+}
+
+.sec1 .contain div.wrapper img {
+  position: absolute;
+  z-index: 100;
+  top: 21%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.sec1 .contain .cont {
+  transform: rotateZ(60deg);
+}
+
+.sec1 .contain .cont .inner {
+  transform: rotateZ(-120deg);
+  background: #1156a6;
+}
+
+.sec1 p.content {
+  background-color: #1156a6;
+  color: #fff;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 24px 19px;
+  margin-top: 15px;
+}
+
+.sec2 h3 {
+  margin-bottom: 16px;
+}
+
+.sec2 p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.sec2 .pro1 {
+  margin-bottom: 30px;
+}
+
+.sec2 .pro1 li.xb4:last-child {
+  padding-left: 20px;
+}
+
+.sec2 h4 {
+  font-size: 22px;
+  margin-top: 33px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec3 h3 {
+  margin-top: 53px;
+  margin-bottom: 20px;
+}
+
+.sec3 li p:first-child {
+  color: #000;
+  font-size: 17px;
+  margin-bottom: 11px;
+}
+
+@media (min-width: 1200px) {
+  .sec1 li.xb4 {
+    min-height: 364px;
+  }
+  .sec1 li.xb4 p.content {
+    display: none;
+  }
+  .sec1 li.xb4 .content {
+    min-height: 309px;
+  }
+  .sec1 li.xb4:hover .content {
+    display: block;
+  }
+  .sec1 li.xb4:hover .contain {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sec1 .contain {
+    margin-top: 10px !important;
+  }
+  .sec1 li.xb4 p.content {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .sec2 h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .sec2 p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .sec3 li p:nth-of-type(2) {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sec2 .pro1 {
+    background: url("../Thailand/b-r.jpg") repeat-y right center;
+  }
+  .sec2 .pro2 {
+    background: url("../Thailand/b-l.jpg") repeat-y left center;
+  }
+}
+
+@media (max-width: 999px) {
+  .sec2 h4 {
+    margin-top: 0;
+  }
+  .sec2 .pro_intro {
+    background-color: #1156a6;
+    padding: 20px;
+  }
+  .sec3 li {
+    margin-bottom: 20px;
+  }
+  .sec3 li img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 449px) {
+  .sec2 li, .sec2 .pro_img img {
+    width: 100%;
+  }
+}
