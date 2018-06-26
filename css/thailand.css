@@ -99,7 +99,7 @@ h4 {
 }
 
 .sec2 h3 {
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
 .sec2 li p {
@@ -140,7 +140,7 @@ h4 {
 
 .sec3 h3 {
   margin-top: 53px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .sec3 li p:first-child {
@@ -174,6 +174,9 @@ span.bt#ly {
 }
 
 @media (max-width: 1199px) {
+  .sec1 {
+    margin-bottom: 0 !important;
+  }
   .sec1 .contain {
     margin-top: 10px !important;
   }
@@ -212,12 +215,20 @@ span.bt#ly {
 }
 
 @media (max-width: 999px) {
+  .sec2 h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
   .sec2 h4 {
     margin-top: 0;
   }
   .sec2 .pro_intro {
     background-color: #1156a6;
     padding: 20px;
+  }
+  .sec3 h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
   }
   .sec3 li {
     margin-bottom: 20px;
