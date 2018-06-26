@@ -112,6 +112,11 @@ h4 {
 .sec2 li p:last-child {
   opacity: 0.8;
   font-weight: normal;
+  margin-bottom: 0;
+}
+
+.sec2 li p.ti {
+  margin-bottom: 5px;
 }
 
 .sec2 .pro1 {
