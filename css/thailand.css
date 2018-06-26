@@ -18,7 +18,7 @@ body {
 
 h3 {
   font-size: 24px;
-  color: #000;
+  color: #333;
   text-align: center;
   font-family: "microsoft yahei";
   font-weight: bold;
@@ -30,7 +30,7 @@ h4 {
 }
 
 .sec1 {
-  margin-bottom: 30px;
+  margin-bottom: 53px;
 }
 
 .sec1 .intro {
@@ -143,6 +143,11 @@ h4 {
   font-size: 17px;
   margin-bottom: 11px;
   font-weight: bold;
+}
+
+span.bt#ly {
+  text-align: center;
+  display: block;
 }
 
 @media (min-width: 1200px) {
