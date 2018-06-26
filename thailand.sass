@@ -9,10 +9,16 @@ body
         left: 50%
         -webkit-transform: translateX(-50%)
 h3 
-    font-size: 22px
+    font-size: 24px
     color: #000
     text-align: center
+    font-family: "microsoft yahei"
+    font-weight: bold
+h4 
+    font-weight: bold
+    opacity: 0.9
 .sec1 
+    margin-bottom: 30px
     .intro
         font-size: 17px
         line-height: 29px
@@ -21,66 +27,103 @@ h3
     h3 
         margin-bottom: 24px
     li.xb4
-        p:first-child
-            text-align: center
-            font-size: 16px
-            color: #000
-            margin-bottom: 0
-
-    .contain
-        position: relative
-        margin-top: 58px
+        * 
+            transition: all .8s cubic-bezier(0.175,0.885,0.32,1) 0s
         .circle
-            position: absolute
-            z-index: 100
-            background: #1156a6
-            width: 38px
-            height: 38px
-            line-height: 38px
-            text-align: center
-            color: #fff 
-            left: 244px 
-            top: 162px
-            border-radius: 50%
-            font-size: 18px
-            font-weight: bold
-            display: none
-        div 
-            width: 170px
-            height: 200px
-            overflow: hidden
-            margin: 0 auto
-        div.wrapper
+            width: 77px
+            height: 77px
+            margin: 0 auto 15px 
+            background-color: #1954a3
             position: relative
+            border-radius: 50%
             img 
                 position: absolute
-                z-index: 100
-                top: 21%
-                left: 0
-                right: 0
-                margin: 0 auto
+        p
+            font-size: 16px
+            font-weight: bold
+            color: #1954a3
+        p.content
+            font-weight: 400
+        .long-line
+            width: 77px
+            height: 3px 
+            margin: 0 auto
+            background-color: #1954a3
+            display: none
+    li.xb4:first-child 
+        img 
+            left: 25%
+            top: 25%
+    li.xb4:nth-of-type(2) 
+        img 
+            left: 29%
+            top: 27%
+    li.xb4:last-child
+        img 
+            left: 22%
+            top: 23%
+        
+    
+    // .contain
+    //     position: relative
+    //     margin-top: 58px
+    //     .circle
+    //         position: absolute
+    //         z-index: 100
+    //         background: #1156a6
+    //         width: 38px
+    //         height: 38px
+    //         line-height: 38px
+    //         text-align: center
+    //         color: #fff 
+    //         left: 244px 
+    //         top: 162px
+    //         border-radius: 50%
+    //         font-size: 18px
+    //         font-weight: bold
+    //         display: none
+    //     div 
+    //         width: 170px
+    //         height: 200px
+    //         overflow: hidden
+    //         margin: 0 auto
+    //     div.wrapper
+    //         position: relative
+    //         img 
+    //             position: absolute
+    //             z-index: 100
+    //             top: 21%
+    //             left: 0
+    //             right: 0
+    //             margin: 0 auto
             
                 
-        .cont 
-            transform: rotateZ(60deg)
-            .inner
-                transform: rotateZ(-120deg)
-                background: #1156a6
+    //     .cont 
+    //         transform: rotateZ(60deg)
+    //         .inner
+    //             transform: rotateZ(-120deg)
+    //             background: #1156a6
         
-    p.content 
-        background-color: #1156a6
-        color: #fff
-        font-size: 13px
-        line-height: 29px
-        padding: 24px 19px
+    // p.content 
+    //     background-color: #1156a6
+    //     color: #fff
+    //     font-size: 13px
+    //     line-height: 29px
+    //     padding: 24px 19px
         
-        margin-top: 15px
+    //     margin-top: 15px
 .sec2
     h3 
         margin-bottom: 16px
-    p
-        font-size: 16px
-        color: #fff
+    li
+        p
+            font-size: 16px
+            color: #fff
+            opacity: 0.9
+            font-weight: bold     
+            &:last-child 
+                opacity: 0.8
+                font-weight: normal
     .pro1
         margin-bottom: 30px
         li.xb4:last-child 
@@ -92,6 +135,7 @@ h3
         margin-bottom: 10px
         color: #fff
 .sec3
+    margin-bottom: 40px
     h3 
         margin-top: 53px
         margin-bottom: 20px
@@ -100,23 +144,24 @@ h3
             color: #000
             font-size: 17px
             margin-bottom: 11px
+            font-weight: bold
 
 @media(min-width: 1200px) 
     .sec1 
         li.xb4 
-            min-height: 364px
             p.content 
-                display: none
-            .content
-                min-height: 309px
-            &:hover 
-                p:first-child
-                    color: #ed6c00
-                .content
-                    display: block
+                min-height: 250px
+            &:hover
+                *
+                    transition: all .3s cubic-bezier(0.175,0.885,0.32,1) 0s
+                .circle,.long-line
                     background-color: #ed6c00
-                .contain
-                    display: none
+                p 
+                    color: #ed6c00
+                .long-line
+                    width: 100%
+
+                    
 @media(max-width: 1199px)
     .sec1
         .contain
@@ -131,7 +176,8 @@ h3
             margin-bottom: 5px
         p 
             margin-bottom: 5px
-            font-size: 14px
+            font-size: 13px !important
+
     .sec3 li p:nth-of-type(2)
         font-size: 13px
 @media(min-width: 1000px)
