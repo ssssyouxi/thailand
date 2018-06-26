@@ -184,16 +184,16 @@ h4 {
 
 @media (min-width: 1000px) {
   .sec2 .pro1:hover {
-    background: url("../Thailand/b-l.jpg") repeat-y right center;
+    background: linear-gradient(to right, #fff 50%, #ed6c00 50%);
   }
   .sec2 .pro2:hover {
-    background: url("../Thailand/b-l.jpg") repeat-y left center;
+    background: linear-gradient(to left, #fff 50%, #ed6c00 50%);
   }
   .sec2 .pro1 {
-    background: url("../Thailand/b-r.jpg") repeat-y right center;
+    background: linear-gradient(to right, #fff 50%, #1954a3 50%);
   }
   .sec2 .pro2 {
-    background: url("../Thailand/b-r.jpg") repeat-y left center;
+    background: linear-gradient(to left, #fff 50%, #1954a3 50%);
   }
 }
 
